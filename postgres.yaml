@@ -1,0 +1,12 @@
+# Use postgre db for use with testing/developing calendso
+# along with user/password credentials
+version: '1.0'
+
+services:
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: calendso
+      POSTGRES_USER: calendso
+      POSTGRES_DB: calendso
